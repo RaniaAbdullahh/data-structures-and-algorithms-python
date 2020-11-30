@@ -1,3 +1,13 @@
+## table of content 
+|  challange name | pull request  |  
+|-----------------|---------------|
+| arry_reverse    |               |
+| arry_shift      |               |
+
+
+
+
+
 
 # Reverse an Array
 Python provides us with various ways of reversing a list, We will go through very  simple  technique on how a list in python can be reversed.

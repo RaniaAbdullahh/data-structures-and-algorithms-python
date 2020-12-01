@@ -1,9 +1,9 @@
 ## table of content 
-|  challange name |                                  pull request                                  |  
-|-----------------|--------------------------------------------------------------------------------|
-| arry_reverse    | https://github.com/RaniaAbdullahh/data-structures-and-algorithms-python/pull/1 |
-| arry_shift      | https://github.com/RaniaAbdullahh/data-structures-and-algorithms-python/pull/2 |
-
+|  challange name   |                                  pull request                                  |  
+|-------------------|--------------------------------------------------------------------------------|
+| arry_reverse      | https://github.com/RaniaAbdullahh/data-structures-and-algorithms-python/pull/1 |
+| arry_shift        | https://github.com/RaniaAbdullahh/data-structures-and-algorithms-python/pull/2 |
+|  arry_binary_shift|https://github.com/RaniaAbdullahh/data-structures-and-algorithms-python/pull/3  |
 
 
 

@@ -30,3 +30,17 @@ we worked depending on the indexes and the length of the list, if the list lengt
 
 ## Solution
 ![Embedded whiteboard image](assets/array_shift.png)
+
+
+# array binary search
+  function takes in 2 parameters: a sorted array and the search key.  return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+## Challenge Description
+ function takes in 2 parameters: a sorted array and the search key.  return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+
+## Approach & Efficiency
+* to return the index of the wanted number if exist and return -1 if doesnt exist
+*  use simple technique which depends on the binary search 
+* we worked depending on the indexes and the length of the list..
+
+## Solution
+![Embedded whiteboard image](assets/binary_shift.png)

@@ -44,3 +44,19 @@ we worked depending on the indexes and the length of the list, if the list lengt
 
 ## Solution
 ![Embedded whiteboard image](assets/binary_shift.png)
+
+
+
+# linked list
+to Create a linked list with  Nodes  that has properties for the value stored in the Node, and a pointer to the next Node.also with ability to add new nodes in the head of tke linked list 
+## Challenge Description
+to Create a linked list with  Nodes  that has properties for the value stored in the Node, and a pointer to the next Node.also with ability to add new nodes in the head of tke linked list 
+
+## Approach & Efficiency
+* first I will  define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance
+* then define a method called includes which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+* finally define a method called toString (or __str__ in Python) which takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
+"{ a } -> { b } -> { c } -> NULL"
+
+## Solution
+![Embedded whiteboard image](assets/linked_list_1.png)

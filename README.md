@@ -4,6 +4,7 @@
 | arry_reverse      | https://github.com/RaniaAbdullahh/data-structures-and-algorithms-python/pull/1 |
 | arry_shift        | https://github.com/RaniaAbdullahh/data-structures-and-algorithms-python/pull/2 |
 |  arry_binary_shift|https://github.com/RaniaAbdullahh/data-structures-and-algorithms-python/pull/3  |
+| linked_list       |https://github.com/RaniaAbdullahh/data-structures-and-algorithms-python/pull/4  |
 
 
 

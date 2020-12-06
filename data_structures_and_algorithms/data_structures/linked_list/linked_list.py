@@ -38,7 +38,54 @@ class LinkedList :
                 result += f'{{{current.value}}}->'
                 current=current.next   
             result += f'NULL'
-        return result      
+        return result 
+
+    def append(self, data):
+        
+        node = Node(data)
+        if self.head == None:
+            self.head = node
+        else:
+            current = self.head
+            while current.next != None:
+                current = current.next
+            current.next = node
+
+    
+    def insert_before(self, value, newvalue):
+        '''
+        Add a new node with  new Value before the first value node
+
+        '''
+        node = Node(newvalue)
+        current = self.head
+        while current != None:
+            if current.value == value:
+                node.next = current
+                self.head = node
+                return
+            if current.next:
+                if current.next.value == value:
+                    node.next = current.next
+                    current.next = node
+                    return 'secssfuly added'
+                current = current.next
+
+    def insert_after(self, value, newvalue):
+        '''
+        Add a new node with newVal after the first value node
+
+        '''
+        node = Node(newvalue)
+        current = self.head
+        while current != None:
+            if current.value == value:
+                node.next = current.next
+                current.next = node
+                return 'secssfuly added'
+            current = current.next            
+                  
+
 
 
 
@@ -46,17 +93,17 @@ class LinkedList :
 
 
 if __name__ == "__main__":
-    pass
-    # brothers = LinkedList()
+    #pass
+    brothers = LinkedList()
     # node1=Node('rania')
     # node2=Node('Moh')
     # node2.next=node1
-    # brothers.insert('rania')
-    # brothers.insert('moh')
-    # brothers.insert('Malk')
+    brothers.append('rania')
+    brothers.append('moh')
+    brothers.append('Malk')
     # brothers.insert('aml')
-    # print(brothers)
-    # if brothers.includes('rania'): 
-    #     print ('True') 
-    # else: 
-    #     print ('false')
+    print(brothers)
+    if brothers.includes('rania'): 
+        print ('True') 
+    else: 
+        print ('false')

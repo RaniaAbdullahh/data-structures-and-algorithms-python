@@ -61,3 +61,16 @@ to Create a linked list with  Nodes  that has properties for the value stored in
 
 ## Solution
 ![Embedded whiteboard image](assets/linked_list_1.png)
+
+
+# linked list II
+to Create a linked list with  Nodes  that has properties for the value stored in the Node, and a pointer to the next Node.also with ability to add a new node with the given value to the end of the list, also to make a function which add a new node with the given newValue immediately before the first value node, also a function which add a new node with the given new Value immediately after the first value node
+## Challenge Description
+to Create a linked list with  Nodes  that has properties for the value stored in the Node, and a pointer to the next Node.also with ability to add a new node with the given value to the end of the list, also to make a function which add a new node with the given newValue immediately before the first value node, also a function which add a new node with the given new Value immediately after the first value node
+## Approach & Efficiency
+* first I will  define a method called append which takes any value as an argument and adds a new node with that value to the  to the end of the list.
+* then define a method called .insertBefore(value, newVal) which takes a value and a new value  as an arguments and add a new node with the given newValue immediately before the first value node,
+* finally define a method called .insertAfter(value, newVal)  which takes a value and a new value  as an arguments and add a new node with the given new Value immediately after the first value node.
+
+## Solution
+![Embedded whiteboard image](assets/linked_list_II.png)

@@ -74,3 +74,16 @@ to Create a linked list with  Nodes  that has properties for the value stored in
 
 ## Solution
 ![Embedded whiteboard image](assets/linked_list_II.png)
+
+# ll-kth-from-end
+to Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+## Challenge Description
+to Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+## Approach & Efficiency
+* first I will define a method called kth_from_end which takes an aregument k to get the indexg greater than the argument 
+* by decreasing the index by the argument 
+* then create method to get the value of the index we finally got 
+* finally will return the value 
+
+## Solution
+![Embedded whiteboard image](assets/linked_list_3.png)

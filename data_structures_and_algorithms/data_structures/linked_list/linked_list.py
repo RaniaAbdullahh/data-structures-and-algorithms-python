@@ -83,8 +83,30 @@ class LinkedList :
                 node.next = current.next
                 current.next = node
                 return 'secssfuly added'
-            current = current.next            
-                  
+            current = current.next 
+
+    def kth_from_end(self, k):
+        '''
+        Return node value (k) from the end of the list
+
+        '''
+
+        try:
+                
+            n = -1
+            current = self.head
+            while current:
+                current = current.next
+                n = n + 1
+            if n >= k:
+                current = self.head
+                for i in range(n - k):
+                    current = current.next
+            return current.value
+        except:
+            return "The Value Not Exist"
+
+              
 
 
 

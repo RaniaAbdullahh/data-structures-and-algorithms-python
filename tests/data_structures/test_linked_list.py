@@ -76,3 +76,69 @@ def app_ll():
     ll.append('Moh')
     return ll
 
+def test_kth_from_end_0():
+    '''
+    Where k and the length of the list are the same
+
+    '''
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    expected = "The Value Not Exist"
+    actual =ll.kth_from_end(3)
+    assert expected == actual
+    
+def test_kth_from_end_6():
+    '''
+     Where k is greater than the length of the linked list
+
+    '''
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    expected = "The Value Not Exist"
+    actual =ll.kth_from_end(6)
+    assert expected == actual
+
+def test_kth_from_end_2():
+    '''
+     Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+
+    ''' 
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    expected = 3
+    actual =ll.kth_from_end(2)
+    assert expected == actual
+
+
+def test_kth_from_end_size_one():
+    '''
+     Where the linked list is of a size 1 
+
+    '''
+    ll = LinkedList()
+    ll.append(1)
+    expected = 1
+    actual =ll.kth_from_end(0)
+    assert expected == actual
+
+def test_kth_from_end_negative():
+    '''
+     Where k is not a positive intege
+
+    ''' 
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    expected = "The Value Not Exist"
+    actual =ll.kth_from_end(-2)
+    assert expected == actual

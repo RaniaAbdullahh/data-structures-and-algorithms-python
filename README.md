@@ -87,3 +87,14 @@ to Write a method for the Linked List class which takes a number, k, as a parame
 
 ## Solution
 ![Embedded whiteboard image](assets/linked_list_3.png)
+
+# Stacks and Queues
+to Write a class called Stack have multiple methods to add an items to  the stake and to pop some items also a method to return the peek node and finally to check if the stacke is empty or not, and add another class to create a queue and have multiple methods to add nodes to the queue and to remove nodes frome the queue also to return the peek node from the queue also a method to check if the queue is empty or not.
+## Challenge Description
+to Write a class called Stack have multiple methods to add an items to  the stake and to pop some items also a method to return the peek node and finally to check if the stacke is empty or not, and add another class to create a queue and have multiple methods to add nodes to the queue and to remove nodes frome the queue also to return the peek node from the queue also a method to check if the queue is empty or not.
+## Approach & Efficiency
+* first I will define a class called Stack and create these methods push(to add new node), pop(to delete a node), peek(to return the top node), isEmpty(to insure if the stack is empty or not) .
+* then I will define a class called Queue and create these methods enqueue(to add new nodes to the queue), dequeue(to remove nodes from the queue), peek(to return the front node frome the queue) isEmpty(to insure if the queue is empty or not).
+
+## Solution
+![Embedded whiteboard image](assets/stack_and_queue.png)

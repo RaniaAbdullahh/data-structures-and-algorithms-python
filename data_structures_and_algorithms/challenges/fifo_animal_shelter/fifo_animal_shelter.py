@@ -43,49 +43,57 @@ class Queue :
 
 
 
-class AnimalShelter(Queue):
+class Cat():
+    def __init__(self,name):
+        self.name = name
+        self.kind = 'cat'
+
+class Dog():
+    def __init__(self,name):
+        self.name = name
+        self.kind = 'dog'
+
+
+class AnimalShelter:
     def __init__(self):
-        self.front = None
-        self.rear = None
-        self.length=0
-    
+        self.cat_queue = Queue()
+        self.dog_queue = Queue()
+
+
     def enqueue(self,animal):
-        if animal == 'Dog' or animal == 'Cat':
-            print('welcome to our shelter')
-            self.enqueue(animal)
-       
-        else:
-            print('we cant accept this animal ')   
-    
-    def dequeue(self,pref):
-        if pref == 'Dog' or pref == 'Cat':
-           temp = self.front 
-           while(temp.next is not None and  temp.next.value != pref):
-               temp = temp.next
-               break
-
-
-              
+        if animal.kind == 'cat':
+            self.cat_queue.enqueue(animal)
             
-          
-        else:
-            return None
+        if animal.kind == 'dog':
+            self.dog_queue.enqueue(animal)
+            
+    
+    def dequeue (self,kind):
 
+        if kind == 'cat':
 
-# class Cat:
-#     def __init__(self,name):
-#         self.name = name
-#         self.kind = 'cat'
+           
+            cat = self.cat_queue.dequeue()
+            return cat.name
 
-# class Dog:
-#     def __init__(self,name):
-#         self.name = name
-#         self.kind = 'dog'
+        elif kind == 'dog':        
+            dog = self.dog_queue.dequeue()
+            return dog.name
 
 if __name__ == "__main__":
-    shelter = AnimalShelter()
-    shelter.enqueue('Dog')
-    shelter.enqueue('Dog')
-    shelter.enqueue('X')
-    shelter.enqueue('S')
-    #shelter.dequeue("fish")
+    mylo = Dog('mylo')
+    reixy = Dog('reixy')
+    luna = Dog('luna')
+    kitty = Cat('kitty')
+    lily = Cat('lily')
+    a = AnimalShelter()
+    a.enqueue(mylo)
+    a.enqueue(reixy)
+    a.enqueue(luna)
+    a.enqueue(kitty)
+    a.enqueue(lily)
+    #a.enqueue(sno)
+    print(a.dequeue('dog'))
+    #a.dequeue('dog')
+    print(a.dequeue('dog'))
+    print(a.dequeue('dog'))

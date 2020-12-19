@@ -98,3 +98,20 @@ to Write a class called Stack have multiple methods to add an items to  the stak
 
 ## Solution
 ![Embedded whiteboard image](assets/stack_and_queue.png)
+
+
+# queue_with_stacks
+ make a queue out of stack class that should have (enqueue, dequeue) and should have two stack instances (push,pop).
+## Challenge Description
+Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
+enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+## Approach & Efficiency
+* enqueu:
+by using stack() method push I will add new node to the stackA.
+
+* dequeue:
+by using stack() method  pop Iwill save the poped node from stackA in  a new variable called changed_value, then push it to stackB and finally the queue will teturn the poped node from stackB
+
+## Solution
+![Embedded whiteboard image](assets/queue_with_stacks.png)

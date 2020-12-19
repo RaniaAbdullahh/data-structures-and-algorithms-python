@@ -81,8 +81,8 @@ if __name__ == "__main__":
     new_q.enqueue(10)
     new_q.enqueue(15)
     new_q.enqueue(20)
-    # print(new_q.dequeue())#5
-    # print(new_q.dequeue())#10
-    print(new_q.stackA.peek())#15
+    print(new_q.dequeue())#5
+    print(new_q.dequeue())#10
+    print(new_q.stackB.peek())#15
 
   

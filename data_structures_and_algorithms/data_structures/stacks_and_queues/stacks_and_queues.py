@@ -88,11 +88,11 @@ if __name__ == "__main__":
     print(stack.peek()) #2  
     print(stack.isEmpty())#false
 
-queue = Queue()
-# queue.enqueue('ran')
-# queue.enqueue('moh')
-print(queue.peek())#ran
-print(queue.dequeue())#ran  
+    queue = Queue()
+    # queue.enqueue('ran')
+    # queue.enqueue('moh')
+    print(queue.peek())#ran
+    print(queue.dequeue())#ran  
 
 
 

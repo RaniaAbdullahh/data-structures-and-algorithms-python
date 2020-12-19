@@ -59,26 +59,24 @@ class AnimalShelter:
         self.cat_queue = Queue()
         self.dog_queue = Queue()
 
-
     def enqueue(self,animal):
         if animal.kind == 'cat':
             self.cat_queue.enqueue(animal)
             
         if animal.kind == 'dog':
             self.dog_queue.enqueue(animal)
-            
-    
+              
     def dequeue (self,kind):
 
         if kind == 'cat':
 
-           
             cat = self.cat_queue.dequeue()
             return cat.name
 
         elif kind == 'dog':        
             dog = self.dog_queue.dequeue()
             return dog.name
+
 
 if __name__ == "__main__":
     mylo = Dog('mylo')

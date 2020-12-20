@@ -19,10 +19,10 @@ class Queue :
     def dequeue(self):
         '''  removes the node from the front of the queue, and returns the node’s value.'''
         try:
-            temp=self.front
+            val=self.front
             self.front=self.front.next
-            temp.next=None
-            return temp.value
+            val.next=None
+            return val.value
         except:
             return 'Empty Queue'  
 
@@ -54,31 +54,6 @@ class BinaryTree:
             data = Node(data)
         self.root = data
 
-    @staticmethod
-    def breadth_first(tree, node=None, array=None):
-        '''Returns all values of tree in order using breadth first approach'''
-
-        q = Queue()
-
-        if not array:
-            array = []
-
-        if tree.root:
-            q.enqueue(tree.root)
-
-        while q.peek():
-
-            front_node = q.dequeue()
-
-            array.append(front_node.data)
-
-            if front_node.left:
-                q.enqueue(front_node.left)
-
-            if front_node.right:
-                q.enqueue(front_node.right)
-
-        return array
 
     def post_order(self, node=None, result=[]):
         '''Return an array from tree in post-order order'''
@@ -109,6 +84,7 @@ class BinaryTree:
 
         return result
 
+
     def in_order(self, node=None, result=[]):
         '''Return an array from tree in in_order order.'''
         
@@ -123,6 +99,30 @@ class BinaryTree:
             self.in_order(node.right, result)
 
         return result
+
+
+
+    def find_maximum_value(self, root):  
+        
+        if(self.root == None):  
+            return 'Tree is empty'  
+                
+        else:      
+            maximum = root.data  
+                
+            
+            if(root.left != None):
+
+                leftMax = self.find_maximum_value(root.left)  
+                maximum = max(maximum, leftMax)  
+                 
+            if(root.right != None):  
+                rightMax = self.find_maximum_value(root.right)   
+                maximum = max(maximum, rightMax) 
+                
+            return maximum  
+
+
 
 class BinarySearchTree(BinaryTree):
     '''Create a Binary Search Tree by importing a Binary Tree'''
@@ -186,11 +186,14 @@ class BinarySearchTree(BinaryTree):
                 else:
                     return False
 
+   
+
+
 
 if __name__ == "__main__":
     tree = BinaryTree()
     tree.root=Node(5)
     tree.root.left = Node(3)
-    tree.root.right = Node(7)
-
+    tree.root.right = Node(7) 
     print(tree.post_order())
+    print('maximum value : ' ,tree.find_maximum_value(tree.root)) 

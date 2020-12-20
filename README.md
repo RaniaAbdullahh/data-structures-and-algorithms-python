@@ -98,3 +98,18 @@ to Write a class called Stack have multiple methods to add an items to  the stak
 
 ## Solution
 ![Embedded whiteboard image](assets/stack_and_queue.png)
+
+# Maximum Value in a Binary Tree
+to Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+## Challenge Description
+Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+## Approach & Efficiency
+* first I will represent the root of binary tree then my fun find_max_valuet() will find out the largest node in the binary tree by:
+1. the Variable maximum will store roots data
+2. It will find largest element in left subtree 
+3. then i will Compare variable maximum with leftMax and store greater value into maximum 
+4. It will find largest element in right subtree  
+5. then it will Compare variable maximum with rightMax and store greater value into maximum  
+
+## Solution
+![Embedded whiteboard image](assets/finde_max_value.png)

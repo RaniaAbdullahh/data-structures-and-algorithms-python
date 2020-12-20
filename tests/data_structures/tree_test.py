@@ -64,3 +64,9 @@ def test_success_return_collection_in_order(tree): ## 6
     assert result == [99, 42, 88, 1, 22]
 
 
+
+
+def test_find_maximum_value(tree):
+    result = tree.find_maximum_value(tree.root)
+    assert result == 99
+   

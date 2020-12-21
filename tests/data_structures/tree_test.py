@@ -70,3 +70,10 @@ def test_find_maximum_value(tree):
     result = tree.find_maximum_value(tree.root)
     assert result == 99
    
+def test_breadthFirst_value():
+    tree = BinaryTree()
+    tree.root=Node(5)
+    tree.root.left = Node(3)
+    tree.root.right = Node(7)
+    result=tree.breadthFirst()
+    assert result == [5, 3, 7]

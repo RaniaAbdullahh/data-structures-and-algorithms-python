@@ -122,6 +122,26 @@ class BinaryTree:
                 
             return maximum  
 
+   
+    def breadthFirst(self): 
+        queue = Queue()
+        array =[]
+        queue.enqueue(self.root)    
+        while queue.front:
+            curr = queue.front
+            if curr.value.left:
+                queue.enqueue(curr.value.left)
+            if curr.value.right:
+                queue.enqueue(curr.value.right)
+            array.append(curr.value.data)
+            queue.dequeue()
+        return array
+
+
+
+
+         
+
 
 
 class BinarySearchTree(BinaryTree):
@@ -195,5 +215,6 @@ if __name__ == "__main__":
     tree.root=Node(5)
     tree.root.left = Node(3)
     tree.root.right = Node(7) 
-    print(tree.post_order())
-    print('maximum value : ' ,tree.find_maximum_value(tree.root)) 
+    # print(tree.post_order())
+    # print('maximum value : ' ,tree.find_maximum_value(tree.root)) 
+    print('bread  first : ' , tree.breadthFirst())

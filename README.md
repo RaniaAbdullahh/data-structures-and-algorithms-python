@@ -113,3 +113,32 @@ Write an instance method called find-maximum-value. Without utilizing any of the
 
 ## Solution
 ![Embedded whiteboard image](assets/finde_max_value.png)
+
+# breadth first traversal
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+## Challenge Description
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+## Solution
+![Embedded whiteboard image](assets/finde_max_value.png)
+
+
+# “FizzBuzz” on a k-ary tree 
+Write a function called FizzBuzzTree which takes a k-ary tree as an argument.
+Without utilizing any of the built-in methods available to your language, determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original
+## Challenge Description
+Create a new tree with the same structure as the original but the values should be as following:
+If the value is divisible by 3, replace the value with “Fizz”
+If the value is divisible by 5, replace the value with “Buzz”
+If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+If the value is not divisible by 3 or 5, simply turn the number into a String.
+## Approach & Efficiency
+- create function that takes tree as aregument 
+- create new binary tree
+- walk on each leave and check if its divisibe by 3 or 5 or both then replace the value with sting 'fizz','buzz','fizzbuzz'..
+- return a new tree with these values 
+
+## Solution
+![Embedded whiteboard image](assets/fizz_buzz_tree.png)
+
+

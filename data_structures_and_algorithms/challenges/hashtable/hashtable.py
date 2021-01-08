@@ -47,6 +47,6 @@ if __name__ == "__main__":
     print(hashtab.hash('gen'))
     print(hashtab.contains('gen'))
     print(hashtab.get('gen'))
-    
+    #print(hashtab.get('gen','fem'))
     #print(hashtab.map[hashtab.get_hash('gen')])
     #print(hashtab.map[1::2])

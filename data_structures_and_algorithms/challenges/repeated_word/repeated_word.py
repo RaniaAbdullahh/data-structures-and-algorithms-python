@@ -15,7 +15,7 @@ def repeated_word(string):
             all_the_words[word] = 1
 
     if rep_word:
-        return f'"{rep_word}"'
+        return f"{rep_word}"
     else:
         return "No repeating words found"
 
